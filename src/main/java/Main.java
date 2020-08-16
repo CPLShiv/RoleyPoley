@@ -65,8 +65,7 @@ public class Main {
         Message setup = api.getMessageById(736682938414006296L, api.getTextChannelById(736678296783290369L).get()).join();
 
         setup.addReactionAddListener(event -> {
-            Optional<Server> server = event.getServer();
-            server.ifPresent(server0 -> {
+            event.getServer().ifPresent(server0 -> {
                 User user = event.getUser();
 
                 String emoji = event.getEmoji().asUnicodeEmoji().orElse("");
@@ -113,8 +112,7 @@ public class Main {
         });
 
         setup.addReactionRemoveListener(event -> {
-            Optional<Server> server = event.getServer();
-            server.ifPresent(server0 -> {
+            event.getServer().ifPresent(server0 -> {
                 User user = event.getUser();
 
                 String emoji = event.getEmoji().asUnicodeEmoji().orElse("");
