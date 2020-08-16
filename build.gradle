@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+}
+
+group = 'Roly Poly'
+version = '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.javacord:javacord:3.0.6'
+}
+
+mainClassName = 'Main'
