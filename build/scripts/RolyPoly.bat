@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\RolyPoly-1.0.0.jar;%APP_HOME%\lib\javacord-core-3.0.6.jar;%APP_HOME%\lib\javacord-api-3.0.6.jar;%APP_HOME%\lib\logging-interceptor-3.9.1.jar;%APP_HOME%\lib\okhttp-3.9.1.jar;%APP_HOME%\lib\jackson-databind-2.9.3.jar;%APP_HOME%\lib\nv-websocket-client-2.6.jar;%APP_HOME%\lib\log4j-api-2.11.0.jar;%APP_HOME%\lib\okio-1.13.0.jar;%APP_HOME%\lib\jackson-annotations-2.9.0.jar;%APP_HOME%\lib\jackson-core-2.9.3.jar
+set CLASSPATH=%APP_HOME%\lib\RolyPoly-1.0.0.jar;%APP_HOME%\lib\javacord-core-3.1.1.jar;%APP_HOME%\lib\javacord-api-3.1.1.jar;%APP_HOME%\lib\logging-interceptor-3.9.1.jar;%APP_HOME%\lib\okhttp-3.9.1.jar;%APP_HOME%\lib\jackson-databind-2.9.3.jar;%APP_HOME%\lib\nv-websocket-client-2.6.jar;%APP_HOME%\lib\xsalsa20poly1305-0.10.1.jar;%APP_HOME%\lib\log4j-api-2.11.0.jar;%APP_HOME%\lib\vavr-0.10.1.jar;%APP_HOME%\lib\okio-1.14.0.jar;%APP_HOME%\lib\jackson-annotations-2.9.0.jar;%APP_HOME%\lib\jackson-core-2.9.3.jar;%APP_HOME%\lib\bcprov-jdk15on-1.59.jar;%APP_HOME%\lib\vavr-match-0.10.1.jar
 
 @rem Execute RolyPoly
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %ROLY_POLY_OPTS%  -classpath "%CLASSPATH%" Main %CMD_LINE_ARGS%
