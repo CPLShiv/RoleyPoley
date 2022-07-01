@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.javacord:javacord:3.1.1'
+    implementation 'org.javacord:javacord:3.5.0'
 }
 
 mainClassName = 'Main'
